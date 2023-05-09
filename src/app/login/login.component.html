@@ -1,0 +1,80 @@
+<!-- navbar -->
+<nav class="navbar ">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href=""><i class="fa-solid fa-seedling emogi"></i>&nbsp; Bank of Amazon</a>
+	  <form class="d-flex">
+		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-success"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Search</button>
+	  </form>
+	</div>
+  </nav>
+
+  <!-- <div *ngIf="loginSucessMsg" class="container text-center text-success m-5">
+	<h2>
+		<img class="LoadImg" src="https://icaengineeringacademy.com/wp-content/uploads/2019/01/ajax-loading-gif-transparent-background-2.gif" alt="">
+		Loading...Please Wiat...
+	</h2>
+</div> -->
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<div class="offcanvas-header">
+	  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+	  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+	  <div>
+		Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+	  </div>
+	  <div class="dropdown mt-3">
+		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+		  Dropdown button
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		  <li><a class="dropdown-item" href="#">Action</a></li>
+		  <li><a class="dropdown-item" href="#">Another action</a></li>
+		  <li><a class="dropdown-item" href="#">Something else here</a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+
+
+
+<div class="n" >
+  <!-- login content -->
+  <h1 class="login mb-3  text-center">Login To Your Account</h1>
+<div class="form-c">
+
+		
+
+	<form id="loginForm" [formGroup]="loginForm" (ngSubmit)="login()" >
+		<img class="mb-4" src="https://careers.greendot.com/assets/img/careers/bank-icon-525x350.png" alt="" width="90" height="57">
+		<div class="mb-4">
+		  <label for="text" class="form-label mb-3"><h4> Account Number</h4></label>
+		  <input type="text" name="acnumber" formControlName="acnumber" class="form-control" id="AccountNumber"  >
+		  <div *ngIf="this.loginForm.get('acnumber')?.errors && this.loginForm.get('acnumber')?.touched" class="inv text-danger">Invalid Account Number</div>						
+
+		</div>
+
+		<div class="mb-3">
+		  <label for="exampleInputPassword1" class="form-label mb-3"><h4>Password</h4> </label>
+		  <input type="password" name="password" formControlName="password" class="form-control mb-4" id="exampleInputPassword1" >
+		  <div *ngIf="this.loginForm.get('password')?.errors && this.loginForm.get('password')?.touched" class="inv text-danger">Invalid Password</div>						
+
+		</div>
+		<div class="text-danger fw-bolder">{{loginErrorMsg}}</div>
+		<button type="submit"  class="button mb-4">Submit</button>
+
+		
+	
+		  
+		<div class="mb-3">	<a routerLink="registration" >not signed up?signup here</a></div>
+		<div class="spinner-border text-light" *ngIf="loginSucessMsg" role="status">
+  		
+		</div>
+	  </form>
+	
+</div>
+
+</div>

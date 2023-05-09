@@ -1,0 +1,59 @@
+<!-- navbar -->
+<nav class="navbar ">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href=""><i class="fa-solid fa-seedling emogi"></i>&nbsp; Bank of Amazon</a>
+	  <form class="d-flex">
+		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-success" type="submit">Search</button>
+	  </form>
+	</div>
+  </nav>
+<!-- registr login setup -->
+<div *ngIf="RegisterSuccessMessage" class="container text-center text-success m-5">
+	<h2>
+		<img class="LoadImg" src="https://icaengineeringacademy.com/wp-content/uploads/2019/01/ajax-loading-gif-transparent-background-2.gif" alt="">
+		Loading...Please Wait...
+	</h2>
+</div>
+<div class="n" *ngIf="!RegisterSuccessMessage">
+  <!-- login content -->
+<div *ngIf="!RegisterSuccessMessage" class="form-container">
+	<h1 class="login mb-5" style="text-align: center;">Create An Account</h1>
+	<div class="row">
+		<div class="col-6">
+			<img src="https://startup.mp.gov.in/assets/img/login-bg.png" alt="">
+		</div>
+		<div class="col-6 regForm">
+<form id="loginForm"  [formGroup]="registerForm" (ngSubmit)="register()">
+				<div class="mb-2">
+					<h3>Register Here</h3>
+				  <label for="accountNumber" class="form-label mb-1"></label>
+<input type="email" name="acno" formControlName="acno" class="form-control" id="AccountNumber" placeholder="account number" >
+<div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('acno')?.touched" class="inv text-danger">Invalid Account Number</div>						
+				</div>
+		
+				<div class="mb-2">
+					<label for="userName" class="form-label mb-1"></label>
+<input type="text" name="username" formControlName="username" class="form-control mb-2" id="exampleInputPassword1"placeholder="enter username" >
+<div *ngIf="this.registerForm.get('username')?.errors && this.registerForm.get('username')?.touched" class="inv text-danger">Invalid Username</div>				 
+</div>
+
+				  
+
+				<div class="mb-3">
+				  <label for="inputPassword" class="form-label mb-1"></label>
+<input type="password" name="password" formControlName="password" class="form-control mb-4" id="exampleInputPassword1"placeholder="enter password" >
+<div *ngIf="this.registerForm.get('password')?.errors && this.registerForm.get('password')?.touched" class="inv text-danger">Invalid Password</div>				 
+
+				</div>
+	<!-- register ewrror message	 -->
+	<div class="inv text-danger fw-bolder">{{ RegisterErrorMEessage}}</div>
+<button type="submit"  class="button mb-4">Register</button>
+				<div>	<a routerLink="" class="">continue? please signin</a></div>
+			  </form></div>
+	</div>
+
+	
+
+</div>
+</div>

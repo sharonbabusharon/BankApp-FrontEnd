@@ -1,0 +1,153 @@
+<!-- navbar -->
+<nav class="navbar ">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href=""><i class="fa-solid fa-seedling emogi"></i>&nbsp; Bank of Amazon</a>
+	  <form class="d-flex">
+		<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		<button class="btn btn-success"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Search</button>
+	  </form>
+	</div>
+  </nav>
+
+
+  <div class="container ">
+	
+		<div class="body">
+				<!-- content -->
+				<h2 class="text-center mt-1 mb-4">
+					TRANSACTION HISTORY
+				</h2>
+					<p style="text-align: justify;">
+						Welcome To Bank Of Amazon
+						Your World Of AMAZON Awaits
+						We’re so glad you’re here! You are now part of a growing community of people creating, collaborating, and connecting across the globe via us.
+						Whether you’ve joined to create something of your own or just to connect with other professionals, we’ve got something for you.
+						Let’s go!
+					</p>
+			
+			
+		</div>
+		
+	</div>
+
+	<div class="container mt-3 mb-4">
+
+		<div class="row mt-3 mb-4">
+			<div class="col"><input [(ngModel)]="searchTerm" type="text" class="form-control" placeholder="search by"></div>
+			<div class="col"><button class="btn btn-success rounded-pill" style="float: right;" (click)="generatePdf()">Eport as PDF</button></div>
+		</div>
+
+		</div>
+
+		
+	<div class="container p-4  mb-4">
+		<caption class="mb-4">Transaction Details</caption>
+
+
+		
+	<table class=" container table">
+		<thead>
+		  <tr>
+			<th scope="col">No.</th>
+			<th scope="col">Type</th>
+			<th scope="col">From Acc</th>
+			<th scope="col">To Acc</th>
+			<th scope="col">Amount</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr *ngFor="let trans of transaction|search:searchTerm:'type' let i=index">
+			<th scope="row">{{i+1}}</th>
+			<td>{{trans.type}}</td>
+			<td>{{trans.fromAcno}}</td>
+			<td>{{trans.toAcno}}</td>
+			<td>{{trans.amount}}</td>
+
+			
+		  </tr>
+	
+		</tbody>
+	  </table>
+
+
+
+
+	  
+	</div>
+
+
+	<footer class="text-center text-white" style="background-color:#C4e8c2;">
+		<!-- Grid container -->
+		<div class="container pt-4">
+		  <!-- Section: Social media -->
+		  <section class="mb-4">
+			<!-- Facebook -->
+			<a
+			  mdbRipple
+			  rippleColor="dark"
+			  class="btn btn-link btn-floating btn-lg text-success m-1"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-facebook-f"></i
+			></a>
+	  
+			<!-- Twitter -->
+			<a
+			  mdbRipple
+			  rippleColor="dark"
+			  class="btn btn-link btn-floating btn-lg text-success m-1"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-twitter"></i
+			></a>
+	  
+			<!-- Google -->
+			<a
+			  mdbRipple
+			  rippleColor="dark"
+			  class="btn btn-link btn-floating btn-lg text-success  m-1"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-google"></i
+			></a>
+	  
+			<!-- Instagram -->
+			<a
+			  mdbRipple
+			  rippleColor="dark"
+			  class="btn btn-link btn-floating btn-lg text-success m-1"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-instagram"></i
+			></a>
+	  
+			<!-- Linkedin -->
+			<a
+			  mdbRipple
+			  rippleColor="dark"
+			  class="btn btn-link btn-floating btn-lg text-success  m-1"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-linkedin"></i
+			></a>
+			<!-- Github -->
+			<a
+			  mdbRipple
+			  rippleColor="dark"
+			  class="btn btn-link btn-floating btn-lg text-success m-1"
+			  href="#!"
+			  role="button"
+			  ><i class="fab fa-github"></i
+			></a>
+		  </section>
+		  <!-- Section: Social media -->
+		</div>
+		<!-- Grid container -->
+	  
+		<!-- Copyright -->
+		<div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  © 2020 Copyright:
+		  <a class="text-light" href="https://mdbootstrap.com/">bankofamzon@gmail.com</a>
+		</div>
+		<!-- Copyright -->
+	  </footer>

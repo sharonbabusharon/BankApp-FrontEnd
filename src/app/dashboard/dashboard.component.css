@@ -1,0 +1,104 @@
+.navbar-brand{
+	color: white;
+	padding-left: 30px;
+	font-size: 27px;
+	font-weight:900 ;
+}
+.navbar{
+	background-color:#6BBD99;
+}
+.emogi{
+	color: #1d8b0d;
+}
+.nav-link {
+	color: white;
+	font-size: 17px;
+	font-weight:900 ;
+}
+.dropdown-menu{
+	background-color: #C4e8c2;
+}
+.dropdown-item{
+	color: white;
+	font-size: 17px;
+	font-weight: 600;
+}
+.navbar-nav {
+	padding-left:30px;
+	padding-right:30px;
+  }
+
+  /* .c{
+	background-color: #C4E8C2;
+	height: 700px;
+  } */
+  img{
+	padding-top: 80px;
+  }
+  
+  .collapse p{
+	line-height: 2;
+	font-size: 22px;
+	font-weight: 500;
+	padding: 30px;
+	color: #2a7756;
+  }
+  #content{
+	line-height: 2;
+	font-size: 22px;
+	font-weight: 500;
+	padding: 30px;
+	color: #2a7756;
+  }
+
+  h2{
+	padding-top: 80px;
+	color: green;
+	font-weight: 900;
+	text-shadow: 3px 3px 8px #70aca0;
+  }
+  /* .c{
+	background-image: url("https://static.vecteezy.com/system/resources/previews/011/426/070/original/aesthetic-white-and-green-background-with-space-for-text-modern-background-design-with-liquid-shape-white-background-with-green-liquid-shapes-free-vector.jpg");
+	background-size: 1800px 750px;
+	background-repeat: no-repeat;
+	height:750px;
+} */
+
+footer{
+	background-color: #C4e8c2;	
+	font-size: 20px;
+	font-weight: 400;
+}
+.nav-item{
+	font-size: 80px;
+}
+
+#btn{
+	margin-left: 30px;
+	font-size: 17PX;
+	border-radius: 20%;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+#balance{
+	color: red;
+	font-weight: 700;
+}
+#transferImg{
+	padding-top: 0px;
+padding-bottom: 20px;
+margin-left: 50px;
+
+}
+
+.LoadImg{
+	width:400px;
+	height:400px;
+	margin-right: 60px;
+	margin-top: 100px;
+  }
+
+#reset{
+	margin-right: 244px;
+}

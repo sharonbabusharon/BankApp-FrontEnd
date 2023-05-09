@@ -1,0 +1,83 @@
+.navbar-brand{
+	color: white;
+	padding-left: 30px;
+	font-size: 27px;
+	font-weight: 900;
+}
+.emogi{
+	color: #1d8b0d;
+}
+.navbar{
+	background-color:#6BBD99;
+}
+/* rgb(195, 199, 200) */
+.form-container{
+	margin-left: 60px;
+	margin-right: 100px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+	.n{
+		background-image: url("https://i.pinimg.com/originals/80/e7/02/80e702022f1b33ff082c0884f501f2e6.jpg");
+		background-size: 1800px 700px;
+		background-repeat: no-repeat;
+		height:700px;
+	}
+
+
+#loginForm{
+	border: 1px solid white;
+	padding: 50px;
+	background-image: url("https://img.freepik.com/free-photo/green-areca-palm_95678-206.jpg?w=1060&t=st=1681909479~exp=1681910079~hmac=33595935b1ba46bdf9c433235cbfddbfb1d3b149ce9d146690d73594ddc48ce3");
+	
+	border-radius: 3%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button {
+	display: inline-block;
+	padding: 5px 15px;
+	font-size: 17px;
+
+	color: #fff;
+	background-color: #0f6e4a;
+	border: none;
+	border-radius: 15px;
+
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+	background-color: #3e8e41;
+	
+	transform: translateY(4px);
+  }
+
+  .login{
+	/* color: #4d6d59; */
+	color: rgb(25, 151, 59);
+	font-weight: 900;
+	font-size: 50px;
+	text-shadow: 3px 3px 8px #70aca0;
+  }
+ h3{
+	color: #3e8e41;
+ }
+ img{
+	width: 450px;
+	height: 450px;
+ }
+ .regForm{
+	padding-left: 10px;
+	padding-right: 100px;
+ }
+ div.inv {
+	text-align: left;
+  }
+  .LoadImg{
+	width:400px;
+	height:400px;
+	margin-right: 60px;
+	margin-top: 100px;
+  }

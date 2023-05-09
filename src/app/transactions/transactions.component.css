@@ -1,0 +1,40 @@
+.navbar-brand{
+	color: white;
+	padding-left: 30px;
+	font-size: 27px;
+	font-weight:900 ;
+}
+.navbar{
+	background-color:#6BBD99;
+}
+.emogi{
+	color: #1d8b0d;
+}
+.navbar-nav {
+	padding-left:30px;
+	padding-right:30px;
+  }
+  p{
+	line-height: 2;
+	font-size: 22px;
+	font-weight: 500;
+
+	color: #2a7756;
+  }
+
+  h2{
+	padding-top: 80px;
+	color: green;
+	font-weight: 900;
+	text-shadow: 3px 3px 8px #70aca0;
+  }
+
+  .nav-item{
+	font-size: 80px;
+}
+
+footer{
+	background-color: #C4e8c2;	
+	font-size: 20px;
+	font-weight: 400;
+}

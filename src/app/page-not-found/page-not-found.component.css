@@ -1,0 +1,21 @@
+img{
+	width: 1000px;
+	height: 700px;
+	margin-left: 280px;
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 60px;
+	
+}
+.container-fluid{
+	background-color: rgb(41, 115, 99);
+	height: 757px;
+}
+button{
+	margin-left: 700px;
+}
+.n{
+	background-color: #C4E8C2;
+	height: 700px;
+}
