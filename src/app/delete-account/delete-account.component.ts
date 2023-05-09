@@ -12,8 +12,15 @@ export class DeleteAccountComponent {
  //user defined event
  
   @Output() onCancel=new EventEmitter();
+  @Output() onDelete=new EventEmitter();
   cancel(){
     this.onCancel.emit()
   }
+
+  deleteChild(){
+    this.onDelete.emit()
+  }
  }
+
+
 

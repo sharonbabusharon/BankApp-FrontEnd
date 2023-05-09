@@ -165,7 +165,7 @@
 	</div>
   </div>
 
-  <app-delete-account [deleteAcno]="acno">
+  <app-delete-account (onCancel)="canceldelete()" (onDelete)="deleteFromParent()" [deleteAcno]="acno">
 
   </app-delete-account>
 

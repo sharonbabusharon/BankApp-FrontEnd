@@ -68,4 +68,9 @@ export class ApiService {
     return this.http.get('http://localhost:5000/getTransactionHistory',this.appendToken())
   }
 
+  //delete user account
+  deleteUserAccount(){
+    return this.http.delete("http://localhost:5000/delete-account",this.appendToken())
+  }
+
 }

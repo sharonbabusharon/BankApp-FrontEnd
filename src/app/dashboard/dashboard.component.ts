@@ -127,4 +127,17 @@ getBalance(){
      this.deleteConformStatus=true
   }
 
+
+  canceldelete(){
+    this.acno=''
+    this.deleteConformStatus=false
+  }
+
+  deleteFromParent(){
+    this.api.deleteUserAccount().subscribe((result:any)=>{
+      localStorage.clear()
+      this.dashboardRouter.navigateByUrl('')
+    })
+  }
+
 }
